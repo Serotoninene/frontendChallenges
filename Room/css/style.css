@@ -1,0 +1,146 @@
+body{
+    font-family: 'Spartan', sans-serif;;
+    margin: 0;
+    padding: 0;
+    width: 95vw;
+    border: 0;
+    /* overflow: hidden; */
+}
+
+/* ------ NAVBAR ------ */
+nav{
+    z-index: 10;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+
+nav a{
+    color: hsl(0, 0%, 100%);
+}
+
+nav .navbar-brand{
+    margin-right: 50px;
+}
+
+nav .nav-link{
+    margin-right: 20px;
+    font-size: 0.8em;
+    padding-top: 12px;
+}
+
+/* ------ ANIMATION DE LA NAVBAR ------ */
+nav .nav-link:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: hsl(0, 0%, 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0%;
+  }
+
+  nav .nav-link:hover:after { 
+    width: 50%; 
+    left: 23%; 
+  }
+    nav .nav-link:hover{
+    color: hsl(0, 0%, 100%);
+  }
+
+
+  /* ------ CAROUSEL ------ */
+.carousel {
+    margin-top: -200px;
+    padding: 0;
+    display: inline-block;
+}
+
+.carousel-inner{
+    height: 700px;
+}
+
+#photo{
+    position: relative;
+    position: relative;
+    top: -50px;
+}
+
+#carousel-controls{
+    background-color:hsl(0, 0%, 0%);
+    display: inline-block;
+    position: relative;
+    margin-top: 24px;
+    height: 80px;
+    widows: 80px;
+    padding: 25px;
+
+}
+
+/* ------ ARTICLE ------ */
+article{
+    display: inline-block;
+    width: 100%;
+}
+
+
+article p{
+    font-size: 0.7em;
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+    margin: 30px 0;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 2.3em;
+}
+
+.container{
+    width: 80%;
+    padding: 80px 0;
+}
+
+/* SHOP NOW */
+.container a{
+    color: hsl(0, 0%, 27%);
+    letter-spacing: 7px;
+    font-size: 0.7em;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container a:hover{
+    color:hsl(0, 0%, 63%);
+}
+
+.container a:hover + .arrow{
+    color:hsl(0, 0%, 63%);
+
+}
+
+.container .arrow{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/* ------ FOOTER ------ */
+.aboutDark img{
+    width: 100%;
+}
+
+footer article{
+    margin: auto 0;
+    padding-top: 50px;
+}
+
+footer h2{
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    position: relative;
+    top: 13px;
+}

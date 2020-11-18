@@ -1,0 +1,142 @@
+*{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+// FONCTIONS
+.border{
+    border: 1px solid red;
+}
+
+.flex{
+    display: flex;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.resp{
+    width: 100%;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+// COULEURS 
+$cyan: hsl(185, 75%, 39%);
+$darkBlue: hsl(229, 23%, 23%);
+$darkGrey: hsl(227, 10%, 46%);
+$grey: hsl(0, 0%, 59%);
+
+
+// CORPS DU CSS
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: $cyan;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    height: 375px;
+    width: 350px;
+    border-radius: 13px;
+    background-color: white;
+    align-items: flex-end;
+}
+
+// PHOTO + NOM, AGE,
+#presentation{
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 60px;
+    overflow: visible;
+    padding: 20px 0;
+    border-bottom: solid hsla(0, 0%, 59%, 0.1) 0.7px ;
+
+    #photo{
+        transform: scale(1.2);
+    
+        img{
+            border: 7px solid white;
+            border-radius: 50%;
+        }
+    }
+
+    h1{
+        font-size: 1.3em;
+        font-weight: 700;
+        color: $darkBlue;
+        padding-bottom: 10px;
+
+        span{
+            color: $darkGrey;
+            font-weight: 400;
+        }
+    }
+   
+    p{
+        color: $darkGrey;
+    }
+
+}
+
+
+// STATS 
+#stats{
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            color: $darkBlue;
+            font-size: 18px;
+            padding-bottom: 8px;
+        }
+
+        p{
+            color: $darkGrey;
+            font-size: 0.6em;
+            letter-spacing: .2rem;
+        }
+    }
+}
+
+// FONDS 
+#fond1{
+    left: -20%;
+    top: -70%;
+}
+
+#fond2{
+    right: -10%;
+    bottom: -70%;
+}
+
